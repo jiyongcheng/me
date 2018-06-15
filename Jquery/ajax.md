@@ -120,18 +120,18 @@ This event is triggered if an Ajax request is started and no other Ajax requests
 This event, which is triggered before an Ajax request is started, allows you to modify the XMLHttpRequest object (setting additional headers, if need be.)
 * ajaxSend (Global Event)
 This global event is also triggered before the request is run.
-success (Local Event)
+* success (Local Event)
 This event is only called if the request was successful (no errors from the server, no errors with the data).
-ajaxSuccess (Global Event)
+* ajaxSuccess (Global Event)
 This event is also only called if the request was successful.
-error (Local Event)
+* error (Local Event)
 This event is only called if an error occurred with the request (you can never have both an error and a success callback with a request).
-ajaxError (Global Event)
+* ajaxError (Global Event)
 This global event behaves the same as the local error event.
-complete (Local Event)
+* complete (Local Event)
 This event is called regardless of if the request was successful, or not. You will always receive a complete callback, even for synchronous requests.
-ajaxComplete (Global Event)
+* ajaxComplete (Global Event)
 This event behaves the same as the complete event and will be triggered every time an Ajax request finishes.
-ajaxStop (Global Event)
+* ajaxStop (Global Event)
 This global event is triggered if there are no more Ajax requests being processed.
 
