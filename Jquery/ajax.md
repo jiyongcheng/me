@@ -2,7 +2,6 @@
 
 1.
 ```javascript
-
 $.ajax({
    url: '',
    type: 'POST'
@@ -12,12 +11,10 @@ $.ajax({
    error: function() {},
    success: function(data) {},
 });
-
 ```
 
 2.
 ```javascript
-
 $.ajax({
    url: '',
    type: 'GET'
@@ -27,12 +24,10 @@ $.ajax({
    error: function() {},
    success: function(data) {},
 });
-
 ```
 
 3.
 ```javascript
-
 // Assign handlers immediately after making the request,
 // and remember the jqXHR object for this request
 var jqxhr = $.ajax( "example.php" )
@@ -52,7 +47,6 @@ var jqxhr = $.ajax( "example.php" )
 jqxhr.always(function() {
   alert( "second complete" );
 });
-
 ```
 
 > done 和 success一样, fail和error一样
@@ -60,7 +54,6 @@ jqxhr.always(function() {
 ####$.get使用
 
 ```javascript
-
 var jqxhr = $.get( "example.php", function() {
   alert( "success" );
 })
@@ -85,7 +78,6 @@ jqxhr.always(function() {
 > same as 
 
 ```javascript
-
 $.ajax({
   url: url,
   data: data,
@@ -97,7 +89,6 @@ $.ajax({
 ####$.post的使用
 
 ```javascript
-
 $.post(
   "test.php", 
   { name: "John", time: "2pm" }
