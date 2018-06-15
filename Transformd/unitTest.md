@@ -18,17 +18,20 @@ docker exec -ti web_app_1 bash
     * 运行所有测试
     
 ```bash
-    root@c16011ab3739:/app/src# ../vendor/bin/codecept run --env docker
+
+root@c16011ab3739:/app/src# ../vendor/bin/codecept run --env docker
 ```
     * 运行单个文件的测试
     
-```
-    root@c16011ab3739:/app/src# ../vendor/bin/codecept run dashboard/tests/unit/modules/forms/helpers/SubmissionViewHelperTest.php --env docker
+```bash
+
+root@c16011ab3739:/app/src# ../vendor/bin/codecept run dashboard/tests/unit/modules/forms/helpers/SubmissionViewHelperTest.php --env docker
 ```
     * 生成coverage报告
     
-```
-    root@c16011ab3739:/app/src# ../vendor/bin/codecept run dashboard/tests/unit/modules/forms/helpers/SubmissionViewHelperTest.php --env docker --coverage-html
+```bash
+
+root@c16011ab3739:/app/src# ../vendor/bin/codecept run dashboard/tests/unit/modules/forms/helpers/SubmissionViewHelperTest.php --env docker --coverage-html
 ```
     
 4.为什么要到app/src目录下面
