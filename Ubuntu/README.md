@@ -1,4 +1,4 @@
-####截屏
+#### 截屏
 * __Prt Scrn__ to take a screenshot of the desktop.
 
 * __Alt+Prt Scrn__ to take a screenshot of a window.
