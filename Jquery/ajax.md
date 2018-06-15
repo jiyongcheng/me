@@ -2,27 +2,24 @@
 
 ```
 $.ajax({
-   url: 'http://api.joind.in/v2.1/talks/10889',
+   url: '',
+   type: 'POST'
    data: {
       format: 'json'
    },
    error: function() {},
-   dataType: 'jsonp',
    success: function(data) {},
-   type: 'GET'
 });
 
 
-
 $.ajax({
-   url: 'http://api.joind.in/v2.1/talks/10889',
+   url: '',
+   type: 'GET'
    data: {
       format: 'json'
    },
    error: function() {},
-   dataType: 'jsonp',
    success: function(data) {},
-   type: 'GET'
 });
 
 ```
