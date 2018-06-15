@@ -83,6 +83,7 @@ jqxhr.always(function() {
 ```
 
 > same as 
+
 ```javascript
 
 $.ajax({
@@ -107,8 +108,8 @@ $.post(
 ```
 
 > same as 
-```javascript
 
+```javascript
 $.ajax({
   type: "POST",
   url: url,
