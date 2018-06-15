@@ -1,5 +1,6 @@
 ####$.ajax的使用
 
+
 ```
 $.ajax({
   method: "POST",
