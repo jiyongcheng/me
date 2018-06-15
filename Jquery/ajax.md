@@ -2,6 +2,7 @@
 
 1.
 ```javascript
+
 $.ajax({
    url: '',
    type: 'POST'
@@ -13,8 +14,10 @@ $.ajax({
 });
 
 ```
+
 2.
-```
+```javascript
+
 $.ajax({
    url: '',
    type: 'GET'
@@ -28,7 +31,8 @@ $.ajax({
 ```
 
 3.
-```
+```javascript
+
 // Assign handlers immediately after making the request,
 // and remember the jqXHR object for this request
 var jqxhr = $.ajax( "example.php" )
@@ -55,7 +59,8 @@ jqxhr.always(function() {
 
 ####$.get使用
 
-```
+```javascript
+
 var jqxhr = $.get( "example.php", function() {
   alert( "success" );
 })
@@ -78,7 +83,8 @@ jqxhr.always(function() {
 ```
 
 > same as 
-```
+```javascript
+
 $.ajax({
   url: url,
   data: data,
@@ -89,7 +95,8 @@ $.ajax({
 
 ####$.post的使用
 
-```
+```javascript
+
 $.post(
   "test.php", 
   { name: "John", time: "2pm" }
@@ -100,7 +107,8 @@ $.post(
 ```
 
 > same as 
-```
+```javascript
+
 $.ajax({
   type: "POST",
   url: url,
