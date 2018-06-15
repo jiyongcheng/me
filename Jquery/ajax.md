@@ -1,6 +1,7 @@
 ####$.ajax的使用
 
-*```
+1.
+```
 $.ajax({
    url: '',
    type: 'POST'
@@ -12,6 +13,7 @@ $.ajax({
 });
 
 ```
+2.
 ```
 $.ajax({
    url: '',
@@ -25,6 +27,7 @@ $.ajax({
 
 ```
 
+3.
 ```
 // Assign handlers immediately after making the request,
 // and remember the jqXHR object for this request
