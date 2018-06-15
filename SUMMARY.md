@@ -4,6 +4,8 @@
 * [Docker](Docker/README.md)
 * [GIT](git/README.md)
   * [handbook](Git/handbook.md)
+* [Jquery](Jquery/README.md)
+  * [ajax](Jquery/ajax.md)
 * [Tranformd](Transformd/README.md)
   * [Unit Test](Transformd/unitTest.md)
   * [Lint](Transformd/lint.md)
