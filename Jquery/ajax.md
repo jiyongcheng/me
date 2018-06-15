@@ -11,7 +11,8 @@ $.ajax({
    success: function(data) {},
 });
 
-
+```
+```
 $.ajax({
    url: '',
    type: 'GET'
@@ -22,6 +23,9 @@ $.ajax({
    success: function(data) {},
 });
 
+```
+
+```
 // Assign handlers immediately after making the request,
 // and remember the jqXHR object for this request
 var jqxhr = $.ajax( "example.php" )
