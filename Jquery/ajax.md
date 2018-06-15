@@ -116,7 +116,7 @@ This is the full list of Ajax events, and in the order in which they are trigger
 
 * ajaxStart (Global Event)
 This event is triggered if an Ajax request is started and no other Ajax requests are currently running.
-> * beforeSend (Local Event)
+* beforeSend (Local Event)
 This event, which is triggered before an Ajax request is started, allows you to modify the XMLHttpRequest object (setting additional headers, if need be.)
 * ajaxSend (Global Event)
 This global event is also triggered before the request is run.
