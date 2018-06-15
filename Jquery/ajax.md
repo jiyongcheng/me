@@ -52,3 +52,38 @@ jqxhr.always(function() {
 ```
 
 > done 和 success一样, fail和error一样
+
+####$.get使用
+
+```
+var jqxhr = $.get( "example.php", function() {
+  alert( "success" );
+})
+  .done(function() {
+    alert( "second success" );
+  })
+  .fail(function() {
+    alert( "error" );
+  })
+  .always(function() {
+    alert( "finished" );
+  });
+ 
+// Perform other work here ...
+ 
+// Set another completion function for the request above
+jqxhr.always(function() {
+  alert( "second finished" );
+});
+```
+
+> same as 
+```
+$.ajax({
+  url: url,
+  data: data,
+  success: success,
+  dataType: dataType
+});
+```
+
