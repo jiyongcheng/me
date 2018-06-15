@@ -50,3 +50,5 @@ jqxhr.always(function() {
 });
 
 ```
+
+> done 和 success一样, fail和error一样
