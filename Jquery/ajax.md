@@ -87,3 +87,12 @@ $.ajax({
 });
 ```
 
+####$.post的使用
+
+```
+$.post( "test.php", { name: "John", time: "2pm" })
+  .done(function( data ) {
+    alert( "Data Loaded: " + data );
+  });
+```
+
