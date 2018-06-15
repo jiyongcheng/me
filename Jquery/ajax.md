@@ -1,6 +1,6 @@
 ####$.ajax的使用
 
-```
+* ```
 $.ajax({
    url: '',
    type: 'POST'
