@@ -9,5 +9,4 @@ $.ajax({
     alert( "Data Saved: " + msg );
 });
 
-  
 ```
