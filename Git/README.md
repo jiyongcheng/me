@@ -19,3 +19,10 @@ $ git branch -D branch_name
 git checkout .
 
 ```
+
+4.撤销staged的改动
+
+```
+git reset .
+
+```
