@@ -1,4 +1,4 @@
-####$.ajax的使用
+#### $.ajax的使用
 
 1.
 ```javascript
