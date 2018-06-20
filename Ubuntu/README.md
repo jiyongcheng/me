@@ -13,3 +13,7 @@
 ```bash
 sudo ln -s /opt/sublime/sublime_text /usr/bin/subl
 ```
+
+#### which php
+which php # shows us where the bin direcotry of PHP is
+/home/ervin/.phpbrew/php/php-5.6.4/bin/php
