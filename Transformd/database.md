@@ -18,3 +18,15 @@ php yii migrate/create email_verification_sdk2_add_validate_against_field -p=/ap
 > like: operand 1 should be a column or DB expression, and operand 2 be a string or an array representing the values that the column or DB expression should be like. For example, ['like', 'name', 'tester'] will generate name LIKE '%tester%'. 
 
 could check the link [db-query-builder: https://www.yiiframework.com/doc/guide/2.0/en/db-query-builder]
+
+#### 查询总数
+
+```php
+//analytics_queue是mongodb的一个collection, _id是主键
+
+//doesn't work
+AnalyticsQueue::find($submissionId)->count();
+
+//it works
+AnalyticsQueue::find()->where(['_id' => $submissionId])->count();
+```
