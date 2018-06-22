@@ -63,4 +63,10 @@ $set:{
 )
 ```
 
+#### 删除一个collection
+
+```php
+Yii::$app->mongodb->getCollection(AnalyticsQueue::collectionName())->drop();
+```
+
 
