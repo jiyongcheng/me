@@ -8,4 +8,33 @@ db.behaviour_1.aggregate([{$group:{_id:"$_id"}},{"$project":{"dateAdded":new Dat
 
 ```
 
-其中的$group是以_id来分组,$project是映射了一个新的字段并且赋值,$out是指出我要将这个操作的结果导入到哪个collection中
+其中的$group是以_id来分组,$project是映射了一个新的字段并且赋值,$out是指出我要将这个操作的结果导入到哪个collection中.
+
+一开始在网上找到的方法都是以循环来做,而且是javascript的.如下
+```javascript
+db.behaviour_1.find({}).forEach(
+    function(x) {
+        db.analytics_queue.update(
+        {_id:x._id}, {_id:x._id, dateAdded:new Date()}, {upsert:true}
+        )
+    }
+)
+```
+这个在shell中也能完成任务. 但是我需要在Yii2里面使用一个migration把collection复制到另一个中,另外这个collection也很大,所以要考虑性能问题.最后我使用了mongodb的aggregate.
+
+
+#### mongodb shell update
+
+```
+db.form.update(
+{_id : new ObjectId('5af2a5cf7b15b90007022a53')}, 
+{
+$set:{
+    "stage.0.page.1.section.1.field.2.config":{"label":"ddd","required":false}
+    }
+},
+{upsert:true, multi:true}
+)
+```
+
+
