@@ -22,6 +22,8 @@ db.behaviour_1.find({}).forEach(
 ```
 这个在shell中也能完成任务. 但是我需要在Yii2里面使用一个migration把collection复制到另一个中,另外这个collection也很大,所以要考虑性能问题.最后我使用了mongodb的aggregate.
 
+如何在yii2中使用aggregate在 [这个链接:https://github.com/yiisoft/yii2-mongodb/blob/master/docs/guide/usage-aggregation.md] 有解释
+
 
 #### mongodb shell update
 
