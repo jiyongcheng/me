@@ -24,7 +24,29 @@ db.behaviour_1.find({}).forEach(
 
 如何在yii2中使用aggregate在 [这个链接](https://github.com/yiisoft/yii2-mongodb/blob/master/docs/guide/usage-aggregation.md) 有解释. 我的代码是这样写的
 
+```php
+    public function safeUp()
+    {
+        $collection = Yii::$app->mongodb->getCollection(BehaviourAR::collectionName());
+        $pipeline = [
+            [
+                '$group' => [
+                    '_id' => '$_id',
+                ],
+            ],
+            [
+                '$project' => [
+                    'dateAdded' => new UTCDateTime(),
+                ],
+            ],
+            [
+                '$out' => AnalyticsQueue::collectionName(),
+            ],
+        ];
 
+        $collection->aggregate($pipeline);
+    }
+```
 
 
 #### mongodb shell update
