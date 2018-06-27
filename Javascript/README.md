@@ -7,3 +7,4 @@ if (index > -1) {
 }
 // array = [2, 9]
 ```
+> The second parameter of splice is the number of elements to remove. Note that splice modifies the array in place and returns a new array containing the elements that have been removed.
