@@ -70,3 +70,12 @@ Yii::$app->mongodb->getCollection(AnalyticsQueue::collectionName())->drop();
 ```
 
 
+#### yii2中使用mongodb的distinct方法过滤去某个字段的值
+```php
+$collection = Yii::$app->mongodb->getCollection(SubmissionIndex::getCollectionName($formId));
+$categories = $collection->distinct('system.category', [
+    'system.category' => ['$ne' => ''],
+    'formId' => intval($formId)
+]);
+```
+
