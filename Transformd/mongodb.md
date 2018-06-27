@@ -78,4 +78,5 @@ $categories = $collection->distinct('system.category', [
     'formId' => intval($formId)
 ]);
 ```
+> 需要注意的是mongodb里面对字符串还是数字敏感,像这里的formId一开始传经来的是字符串,在数据库中保存的是int类型,就没找到结果.
 
