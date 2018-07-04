@@ -24,16 +24,12 @@ which php # shows us where the bin direcotry of PHP is
 #### find file
 
 ```bash
-
 find / -iname "robo3t" 2>/dev/null
-
 ```
 
 find in the current folder
 
 ```bash
-
 find . -iname "robo3t" 2>/dev/null
-
 ```
 
