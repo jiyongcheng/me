@@ -20,3 +20,20 @@ sudo ln -s /opt/sublime/sublime_text /usr/bin/subl
 which php # shows us where the bin direcotry of PHP is
 /home/ervin/.phpbrew/php/php-5.6.4/bin/php
 ```
+
+#### find file
+
+```bash
+
+find / -iname "robo3t" 2>/dev/null
+
+```
+
+find in the current folder
+
+```bash
+
+find . -iname "robo3t" 2>/dev/null
+
+```
+
