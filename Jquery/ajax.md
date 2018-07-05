@@ -122,3 +122,42 @@ $.ajax({
 </form>
 
 ```
+
+```javascript
+
+var files = document.getElementById('attachment-email').files;
+var formData = new FormData();
+// Loop through each of the selected files.
+for (var i = 0; i < files.length; i++) {
+  var file = files[i];
+  // Add the file to the request.
+  formData.append('attachment-email', file, file.name);
+}
+formData.append('content',content);
+var url = '/dashboard/manage/process-action?formId=' + globalData.form.id + '&widgetId=' + me.id + '&action=send-email&dashboard=dashboard.submissionView&submissionId=' + globalData.submission.id;
+
+$.ajax({
+url: url,
+method: 'POST',
+processData: false,
+contentType: false,
+enctype: 'multipart/form-data',
+data: formData,
+success: function (data) {
+  if (data.success) {
+    
+  }
+}
+});
+
+```
+
+>formData是没办法打印出来的,只是显示空值
+
+```php
+if (!empty($_FILES)) {
+  //file_get_contents($_FILES['attachment-email']['tmp_name']
+  //$_FILES['attachment-email']['name']
+}
+
+```
