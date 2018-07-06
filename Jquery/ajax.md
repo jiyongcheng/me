@@ -161,3 +161,5 @@ if (!empty($_FILES)) {
 }
 
 ```
+
+[也可以参考这篇文章](http://blog.teamtreehouse.com/uploading-files-ajax)
